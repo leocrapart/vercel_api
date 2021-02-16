@@ -10,3 +10,5 @@ class handler(BaseHTTPRequestHandler):
         message = cow.Cowacter().milk('Hello from Python from a Serverless Function!')
         self.wfile.write(message.encode())
         return
+
+        
