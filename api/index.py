@@ -5,5 +5,5 @@ app = FastAPI()
 @app.get("/")
 def home():
 	return {
-		"weeeelcome": "its working "
+		"weeeelcome": "its working 2"
 	}
