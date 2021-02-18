@@ -1,7 +1,6 @@
-from pymongo import MongoClient
-import dnspython
+import pymongo
 
-client = MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client["voc_tool"]
 
