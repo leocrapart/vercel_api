@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import mongo.index as mongo
 
+
 app = FastAPI()
 
 class WordItem(BaseModel):
@@ -12,7 +13,7 @@ class WordItem(BaseModel):
 @app.get("/")
 def home():
 	return {
-		"weeeelcome": "its working 2"
+		"weeeelcome pw": "Go to /docs for routes",
 	}
 
 
@@ -24,7 +25,10 @@ def getAllWords():
     }
 
 @app.post("/words")
-def insertWord(wordItem: WordItem):
+def insertWord(word: str):
+    wordItem = {
+        "word": word
+    }
     insertedId = mongo.insertWord(wordItem)
     return {
         "_id": insertedId

@@ -1,6 +1,9 @@
 import pymongo
+import os
 
-client = pymongo.MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+MONGO_PW = os.getenv("MONGO_PW")
+
+client = pymongo.MongoClient(f"mongodb+srv://leocrapart:{MONGO_PW}@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client["voc_tool"]
 
