@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+import dnspython
 
 client = MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
