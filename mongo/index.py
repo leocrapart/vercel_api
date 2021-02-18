@@ -1,6 +1,6 @@
-import pymongo
+from pymongo import MongoClient
 
-client = pymongo.MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://leocrapart:Dupr0pnet@cluster0.xbfcm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client["voc_tool"]
 
