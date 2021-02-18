@@ -9,6 +9,7 @@ db = client["voc_tool"]
 
 colWords = db["words"]
 
+
 ## get   
 
 def getAllWords():
